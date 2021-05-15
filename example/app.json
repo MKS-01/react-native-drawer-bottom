@@ -1,0 +1,22 @@
+{
+  "name": "react-native-drawer-bottom-example",
+  "displayName": "DrawerBottom Example",
+  "expo": {
+    "name": "react-native-drawer-bottom-example",
+    "slug": "react-native-drawer-bottom-example",
+    "description": "Example app for react-native-drawer-bottom",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
