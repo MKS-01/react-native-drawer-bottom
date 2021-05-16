@@ -1,18 +1,18 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import DrawerBottom from 'react-native-drawer-bottom';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    DrawerBottom.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <DrawerBottom
+      // backgroundColor={'red'}
+      // topInset={10}
+      // bottomInset={200}
+      // borderRadius={10}
+      // animationDelay={600}
+      //
+      ></DrawerBottom>
     </View>
   );
 }
@@ -22,10 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    backgroundColor: 'dimgray',
   },
 });

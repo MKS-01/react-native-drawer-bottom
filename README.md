@@ -11,11 +11,19 @@ npm install react-native-drawer-bottom
 ## Usage
 
 ```js
-import DrawerBottom from "react-native-drawer-bottom";
+import DrawerBottom from 'react-native-drawer-bottom';
 
 // ...
 
-const result = await DrawerBottom.multiply(3, 7);
+<DrawerBottom
+  backgroundColor={'red'}
+  topInset={10}
+  bottomInset={200}
+  borderRadius={10}
+  animationDelay={600}
+>
+  //...
+</DrawerBottom>;
 ```
 
 ## Contributing
