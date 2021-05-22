@@ -1,6 +1,10 @@
 # react-native-drawer-bottom
 
-React Native Bottom Drawer
+Gesture based Bottom Drawer @60FPS.
+
+<!-- ![](./sample.gif) -->
+
+<img src= "./sample.gif" height='380'/>
 
 ## Installation
 
@@ -25,6 +29,26 @@ import DrawerBottom from 'react-native-drawer-bottom';
   //...
 </DrawerBottom>;
 ```
+
+### Props
+
+| Prop              | Type   | Description                       |
+| ----------------- | ------ | --------------------------------- |
+| `topInset`        | number | Visible area start point from top |
+| `bottomInset`     | number | Visible area bottom               |
+| `borderRadius`    | number | Top corner radius                 |
+| `backgroundColor` | string | Background Color of the root      |
+| `animationDelay`  | number | Delay in ms. SHOW and HIDE Sheet. |
+
+## Example
+
+- `yarn example start`: start the Metro server for the example app.
+- `yarn example android`: run the example app on Android.
+- `yarn example ios`: run the example app on iOS.
+
+### Note
+
+Suitable without ScrollView. HOC ScrollView support coming soon.
 
 ## Contributing
 

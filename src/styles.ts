@@ -1,4 +1,4 @@
-import { StyleSheet, } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { SCREEN_WIDTH } from './constants'
 
 

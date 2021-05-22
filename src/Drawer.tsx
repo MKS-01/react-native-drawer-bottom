@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, Animated, PanResponder } from 'react-native';
 import type { DrawerProps } from './types';
 import { styles } from './styles';
@@ -21,10 +21,6 @@ const DrawerBottom = ({
 }: DrawerProps) => {
   const [alignment] = useState(new Animated.Value(0));
 
-  // useEffect(() => {
-  //   props.moveDrawerPosition === true ? showDrawer() : hideDrawer();
-  // }, [props.moveDrawerPosition]);
-
   const toggleDrawerPos = ({ value }: { value: number }) => {
     Animated.timing(alignment, {
       toValue: value,
@@ -41,10 +37,6 @@ const DrawerBottom = ({
     toggleDrawerPos({ value: 0 });
   };
 
-  // const drawerOutPutRange =
-
-  // useMemo()
-
   const top = topInset || TOP_INSET;
   const bottom = bottomInset || BOTTOM_INSET;
 
@@ -52,14 +44,8 @@ const DrawerBottom = ({
 
   const actionSheetIntropolate = alignment.interpolate({
     inputRange: [0, 1],
-    // outputRange: [-(SCREEN_HEIGHT - 250) + 90, 0], //90--150
     outputRange: [outPutInitialRange, 0],
   });
-
-  //  const actionSheetIntropolate = alignment.interpolate({
-  //    inputRange: [0, 1],
-  //    outputRange: [-(SCREEN_HEIGHT - 250) + 90, 0], //90--150
-  //  });
 
   const actionSheetStyle = {
     bottom: actionSheetIntropolate,
@@ -69,10 +55,9 @@ const DrawerBottom = ({
     _: any,
     gestureState: { dy: number }
   ) => {
-    if (gestureState.dy >= 130) {
+    if (gestureState.dy >= 100) {
       hideDrawer();
     }
-
     if (gestureState.dy <= -10) {
       showDrawer();
     }
