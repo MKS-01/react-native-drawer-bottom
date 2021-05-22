@@ -2,24 +2,24 @@
 
 Gesture based Bottom Drawer @60FPS.
 
-<!-- ![](./sample.gif) -->
 
-<img src= "./sample.gif" height='380'/>
+
+<img src= "https://github.com/MKS-01/react-native-drawer-bottom/blob/main/sample.gif" height='380'/>
 
 ## Installation
 
 ```sh
-npm install react-native-drawer-bottom
+npm install @mks-01/react-native-drawer-bottom@0.1.0
 ```
 
 ## Usage
 
 ```js
-import DrawerBottom from 'react-native-drawer-bottom';
+import Drawer from "@mks-01/react-native-drawer-bottom";
 
 // ...
 
-<DrawerBottom
+<Drawer
   backgroundColor={'red'}
   topInset={10}
   bottomInset={200}
@@ -27,7 +27,7 @@ import DrawerBottom from 'react-native-drawer-bottom';
   animationDelay={600}
 >
   //...
-</DrawerBottom>;
+</Drawer>;
 ```
 
 ### Props
