@@ -1,5 +1,5 @@
 {
-  "name": "react-native-drawer-bottom",
+"name": "@MKS-01/react-native-drawer-bottom",
   "version": "0.1.0",
   "description": "React Native Bottom Drawer",
   "main": "lib/commonjs/index",
@@ -43,7 +43,7 @@
   },
   "homepage": "https://github.com/MKS-01/react-native-drawer-bottom#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+     "registry": "https://npm.pkg.github.com/MKS-01"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
